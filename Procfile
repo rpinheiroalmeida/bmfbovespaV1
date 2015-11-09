@@ -1,0 +1,1 @@
+web: java -cp target/classes:target/dependency/* br.com.story.phrase.heroku.Main

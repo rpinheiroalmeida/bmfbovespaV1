@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="46.642" errors="2" skipped="0" tests="2" name="br.com.story.phrase.resources.integration.CharacterResourceITTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/java/jdk1.7.0_79/jre/lib/i386"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/rodrigo/workspace/story-phrase"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/rodrigo/workspace/story-phrase"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/opt/java/jdk1.7.0_79/jre/lib/endorsed"/>
+    <property name="os.arch" value="i386"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/rodrigo/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf41772900704720797.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/opt/java/jdk1.7.0_79/jre/lib/i386/server:/opt/java/jdk1.7.0_79/jre/lib/i386:/opt/java/jdk1.7.0_79/jre/../lib/i386:/opt/java/jdk1.7.0_79/jre/lib/i386/client:/opt/java/jdk1.7.0_79/jre/lib/i386::/usr/java/packages/lib/i386:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-32-generic"/>
+    <property name="user.home" value="/home/rodrigo"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="rodrigo"/>
+    <property name="java.class.path" value="/usr/lib/apache/maven/3.3.3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="/opt/java/jdk1.7.0_79/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s /home/rodrigo/.m2/settings.xml test jetty:run"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="/opt/java/jdk1.7.0_79/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/java/jdk1.7.0_79/jre/lib/resources.jar:/opt/java/jdk1.7.0_79/jre/lib/rt.jar:/opt/java/jdk1.7.0_79/jre/lib/sunrsasign.jar:/opt/java/jdk1.7.0_79/jre/lib/jsse.jar:/opt/java/jdk1.7.0_79/jre/lib/jce.jar:/opt/java/jdk1.7.0_79/jre/lib/charsets.jar:/opt/java/jdk1.7.0_79/jre/lib/jfr.jar:/opt/java/jdk1.7.0_79/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/lib/apache/maven/3.3.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="36.367" classname="br.com.story.phrase.resources.integration.CharacterResourceITTest" name="testGetCharacterSucess">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:596)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener$TransactionContext.startTransaction(TransactionalTestExecutionListener.java:507)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.startNewTransaction(TransactionalTestExecutionListener.java:269)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:162)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:358)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:126)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:114)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:142)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:85)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1354)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:555)
+	... 32 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 37 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.&lt;init&gt;(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 40 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.openPersistence(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 47 more
+</error>
+    <system-err>Nov 09, 2015 12:58:05 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class br.com.story.phrase.resources.integration.CharacterResourceITTest]: using defaults.
+Nov 09, 2015 12:58:05 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
+Nov 09, 2015 12:58:06 AM org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters
+INFO: JSR-250 &apos;javax.annotation.ManagedBean&apos; found and supported for component scanning
+Nov 09, 2015 12:58:06 AM org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters
+INFO: JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+Nov 09, 2015 12:58:06 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@13a4ad0: startup date [Mon Nov 09 00:58:06 BRST 2015]; root of context hierarchy
+Nov 09, 2015 12:58:06 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;
+INFO: JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+Nov 09, 2015 12:58:06 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@108e65f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,movieSettingDaoImpl,characterDaoImpl,scriptDaoImpl,characterService,scriptService,movieSettingService,dataSource,sessionFactory,scriptResource,transactionManager]; root of factory hierarchy
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 09, 2015 12:58:08 AM org.springframework.orm.hibernate3.LocalSessionFactoryBean buildSessionFactory
+INFO: Building new Hibernate SessionFactory
+Nov 09, 2015 12:58:31 AM org.springframework.orm.hibernate3.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.apache.commons.dbcp.BasicDataSource@16dddba] of Hibernate SessionFactory for HibernateTransactionManager
+Nov 09, 2015 12:58:41 AM org.springframework.test.context.TestContextManager beforeTestMethod
+WARNING: Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d03c0] to process &apos;before&apos; execution of test method [public void br.com.story.phrase.resources.integration.CharacterResourceITTest.testGetCharacterSucess() throws java.io.IOException] for test instance [br.com.story.phrase.resources.integration.CharacterResourceITTest@18144f7]
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:596)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener$TransactionContext.startTransaction(TransactionalTestExecutionListener.java:507)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.startNewTransaction(TransactionalTestExecutionListener.java:269)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:162)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:358)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:126)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:114)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:142)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:85)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1354)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:555)
+	... 32 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 37 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.&lt;init&gt;(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 40 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:40 heartbeat - read: -1634 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.openPersistence(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 47 more
+
+</system-err>
+  </testcase>
+  <testcase time="10.275" classname="br.com.story.phrase.resources.integration.CharacterResourceITTest" name="testGetCharacterFail">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:596)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener$TransactionContext.startTransaction(TransactionalTestExecutionListener.java:507)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.startNewTransaction(TransactionalTestExecutionListener.java:269)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:162)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:358)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:126)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:114)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:142)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:85)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1354)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:555)
+	... 32 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 37 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.&lt;init&gt;(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 40 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.openPersistence(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 47 more
+</error>
+    <system-err>Nov 09, 2015 12:58:52 AM org.springframework.test.context.TestContextManager beforeTestMethod
+WARNING: Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d03c0] to process &apos;before&apos; execution of test method [public void br.com.story.phrase.resources.integration.CharacterResourceITTest.testGetCharacterFail() throws java.io.IOException] for test instance [br.com.story.phrase.resources.integration.CharacterResourceITTest@15bf3b2]
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:596)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:371)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener$TransactionContext.startTransaction(TransactionalTestExecutionListener.java:507)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.startNewTransaction(TransactionalTestExecutionListener.java:269)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:162)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:358)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:126)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:114)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:449)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:142)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:85)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1354)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:555)
+	... 32 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	... 37 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.&lt;init&gt;(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 40 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@c74fcb41[file =/home/rodrigo/workspace/story-phrase/testdb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2015-11-09 02:58:51 heartbeat - read: -1957 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.openPersistence(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 47 more
+
+</system-err>
+  </testcase>
+</testsuite>
