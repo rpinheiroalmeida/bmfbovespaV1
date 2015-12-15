@@ -1,11 +1,9 @@
-package br.com.story.phrase;
+package br.com.bmf.bovespa;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.web.filter.RequestContextFilter;
 
-import br.com.story.phrase.resources.CharacterResource;
-import br.com.story.phrase.resources.MovieSettingResource;
-import br.com.story.phrase.resources.ScriptResource;
+import br.com.bmf.bovespa.resources.QuotationsResource;
 
 /**
  * Registers the components to be used by the JAX-RS application
@@ -18,11 +16,13 @@ public class RestDemoJaxRsApplication extends ResourceConfig {
 	 */
 	public RestDemoJaxRsApplication() {
 		
-        packages("br.com.story.phrase.rest.impl");
+        packages("br.com.bmf.bovespa.resources");
         
-		register(ScriptResource.class);
-		register(MovieSettingResource.class);
-		register(CharacterResource.class);
+        register(QuotationsResource.class);
+        
+//		register(ScriptResource.class);
+//		register(MovieSettingResource.class);
+//		register(CharacterResource.class);
 		
 		register(RequestContextFilter.class);
 	}
